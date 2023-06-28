@@ -1,3 +1,7 @@
+/***************************/
+/* GENRAL */
+/***************************/
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +24,10 @@ body {
   display: flex;
   margin: 0 30rem;
 }
+.heading-primary {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
 
 /***************************/
 /* HELPER */
@@ -27,17 +35,36 @@ body {
 .rotate {
   transform: rotate(90deg);
 }
+.left-margin-sm {
+  margin-left: 2rem;
+}
 
+.rotate-40 {
+  transform: rotate(-40deg);
+}
+.right-margin-sm {
+  margin-right: 1rem;
+}
+
+.white-font {
+  color: #fff;
+}
+.user-img {
+  height: 4.2rem;
+  border-radius: 100rem;
+}
 /***************************/
 /* NAVIGATION */
 /***************************/
 
 .section-navigation {
   max-width: 32rem;
-  padding: 2.4rem;
+  padding: 2rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+  position: fixed;
 }
 
 .main-nav-icon {
@@ -85,10 +112,389 @@ body {
   border-radius: 100rem;
 }
 
+.btn:hover,
+.btn:active {
+  background-color: #2283bf;
+}
+
 .nav-link {
   text-decoration: none;
   color: #fff;
 }
 .nav-link:hover {
   background-color: #111;
+}
+
+.nav-user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-user-name {
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+.nav-username {
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.margin-left {
+  margin-left: 21.5rem;
+}
+
+/***************************/
+/* NAVIGATION */
+/***************************/
+
+.main {
+  display: flex;
+  margin-left: 32rem;
+}
+
+.section-profile {
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
+  /* overflow: scroll; */
+}
+.profile-header {
+  /* position: fixed;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.828); */
+  padding: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  gap: 3.2rem;
+}
+.tweet-no {
+  color: #777;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #222;
+}
+.top-profile {
+  position: relative;
+}
+.profile-banner {
+  width: 60rem;
+  height: 20rem;
+}
+
+.profile-img {
+  height: 12rem;
+  border-radius: 50rem;
+  border: 5px solid #000;
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+  transform: translateY(50%);
+}
+
+.edit-btn:link,
+.edit-btn:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 100rem;
+  border: 1.5px solid #555;
+  letter-spacing: 0.1rem;
+
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+
+  transform: translateY(4.5rem);
+}
+
+.edit-btn:hover,
+.edit-btn:active {
+  background-color: #111;
+}
+
+.names {
+  margin-top: 6rem;
+  padding: 2rem;
+}
+
+.username {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.bio-text {
+  padding: 2rem;
+  padding-top: 0;
+  font-size: 1.4rem;
+  width: 50rem;
+}
+
+.bio-info {
+  padding: 0 2rem;
+
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.bio-1 {
+  display: flex;
+  align-items: center;
+}
+
+.bio-2 {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.small-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  color: #777;
+  margin-right: 0.5rem;
+}
+
+.bio-link {
+  text-decoration: none;
+  color: #46a3de;
+}
+
+.followers {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.profile-nav-item a {
+  text-decoration: none;
+  color: #777;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+.active-bar {
+  margin-top: 1rem;
+  height: 5px;
+  width: 50px;
+  background-color: #46a3de;
+  border-radius: 20px;
+}
+.active {
+  color: white !important;
+}
+
+.tweets {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #222;
+}
+
+.tweet-user-info {
+  display: flex;
+  gap: 0.5rem;
+  color: #777;
+  font-size: 1.4rem;
+}
+.tweet-user-name {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.tweet-content {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+
+.hashtags {
+  color: #46a3de;
+}
+
+.tweet-interactions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  color: #777;
+}
+
+.interaction-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.comments {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.like {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tweet-interactions p {
+  font-size: 1.2rem;
+}
+
+.tweet-img {
+  width: 50rem;
+  border-radius: 2rem;
+}
+
+/***************************/
+/*  EXTRA */
+/***************************/
+
+.section-extra {
+  position: fixed;
+  right: 16%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.search {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: #222;
+  /* padding: 0.8rem 1.6rem; */
+  padding-left: 1.6rem;
+  border-radius: 20rem;
+}
+
+.icon-color {
+  color: #777;
+}
+.search-input {
+  background-color: #222;
+  border: none;
+  text-decoration: none;
+  padding: 1.2rem;
+  color: #fff;
+}
+.search-input:focus {
+  outline: none;
+}
+
+.galary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  border-radius: 10rem;
+}
+
+.galary img {
+  height: 10rem;
+  width: 10rem;
+  cursor: pointer;
+  object-fit: cover;
+}
+.top-left {
+  border-top-left-radius: 2rem;
+}
+.top-right {
+  border-top-right-radius: 2rem;
+}
+.bottom-left {
+  border-bottom-left-radius: 2rem;
+}
+
+.bottom-right {
+  border-bottom-right-radius: 2rem;
+}
+
+.you-might-like {
+  padding-top: 1.5rem;
+  background-color: #111;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+
+.you-might-like h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+}
+
+.user-card:hover {
+  background-color: #222;
+}
+.user {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.follow {
+  text-decoration: none;
+  color: #111;
+  background-color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  height: 3rem;
+  padding: 0.6rem 1.6rem;
+  border-radius: 10rem;
+}
+
+.show-more {
+  color: #46a3de;
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  /* padding-bottom: 2rem; */
+  cursor: pointer;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.show-more:hover {
+  background-color: #222;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.links div:first-child {
+  display: flex;
+  gap: 1rem;
+}
+
+.links div:last-child {
+  display: flex;
+  gap: 1rem;
 }
