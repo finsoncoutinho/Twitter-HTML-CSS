@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px/16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.twitter {
+  display: flex;
+  margin: 0 30rem;
+}
+
+/***************************/
+/* HELPER */
+/***************************/
+.rotate {
+  transform: rotate(90deg);
+}
+
+/***************************/
+/* NAVIGATION */
+/***************************/
+
+.section-navigation {
+  max-width: 32rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.main-nav-icon {
+  height: 32px;
+  width: 32px;
+  color: #fff;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.nav-item {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 100rem;
+}
+.nav-icon {
+  display: inline-block;
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #fff;
+}
+
+.nav-text {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+}
+
+.btn:link,
+.btn:visited {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  background-color: #46a3de;
+  padding: 1.4rem 6.4rem;
+  border-radius: 100rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-link:hover {
+  background-color: #111;
+}
