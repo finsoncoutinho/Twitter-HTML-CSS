@@ -22,7 +22,8 @@ body {
 
 .twitter {
   display: flex;
-  margin: 0 30rem;
+  max-width: 130rem;
+  margin: 0 auto;
 }
 .heading-primary {
   font-size: 1.8rem;
@@ -64,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .main-nav-icon {
@@ -153,7 +154,7 @@ body {
 
 .main {
   display: flex;
-  margin-left: 32rem;
+  /* margin-left: 32rem; */
 }
 
 .section-profile {
@@ -366,8 +367,8 @@ body {
 /***************************/
 
 .section-extra {
-  position: fixed;
-  right: 16%;
+  /* position: fixed;
+  right: 16%; */
   padding: 2rem;
   display: flex;
   flex-direction: column;
